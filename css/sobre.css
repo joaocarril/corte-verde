@@ -1,0 +1,131 @@
+/* ==========================================================================
+   CORTE CERTO — sobre.css
+   Estilos específicos da página "Sobre Nós" (paginas/sobre/sobre.html).
+   Complementa css/style.css — aqui ficam apenas as regras exclusivas desta
+   página: linha temporal, valores, equipa e lista de diferenciais.
+   (A secção "A nossa história" reutiliza as classes .quem-somos__* já
+   definidas em css/style.css, para evitar código duplicado.)
+   ========================================================================== */
+
+.bloco-texto-central { max-width: 760px; margin-inline: auto; text-align: center; }
+.bloco-texto-central p { margin-inline: auto; }
+.bloco-texto-central p + p { margin-top: 1rem; }
+
+/* --------------------------------------------------------------------------
+   Linha temporal (timeline)
+   -------------------------------------------------------------------------- */
+.timeline {
+  position: relative;
+  max-width: 760px;
+  margin-inline: auto;
+  padding-left: 2.2rem;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px; top: 6px; bottom: 6px;
+  width: 2px;
+  background-color: var(--cor-cinza-claro);
+}
+.timeline__progresso {
+  position: absolute;
+  left: 7px; top: 6px;
+  width: 2px; height: 0%;
+  background-color: var(--cor-verde-medio-claro);
+  transition: height 0.1s linear;
+}
+.timeline__item {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 2.6rem;
+  padding-left: 1.8rem;
+}
+.timeline__item:last-child { padding-bottom: 0; }
+.timeline__item::before {
+  content: "";
+  position: absolute;
+  left: -2.2rem; top: 3px;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background-color: var(--cor-verde-medio-claro);
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px var(--cor-verde-medio-claro);
+}
+.timeline__ano {
+  display: inline-block;
+  font-family: var(--fonte-titulos);
+  font-weight: 700;
+  color: var(--cor-verde-medio-claro);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.35rem;
+}
+.timeline__item h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+.timeline__item p { font-size: 0.93rem; color: var(--cor-cinza-medio); }
+
+/* --------------------------------------------------------------------------
+   Valores
+   -------------------------------------------------------------------------- */
+.grelha-valores { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+.cartao-valor { padding: 2.1rem 1.6rem; }
+.cartao-valor__icone { width: 52px; height: 52px; margin-bottom: 1.2rem; }
+.cartao-valor__icone svg { width: 24px; height: 24px; }
+.cartao-valor h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+.cartao-valor p { font-size: 0.92rem; color: var(--cor-cinza-medio); }
+
+/* --------------------------------------------------------------------------
+   Equipa
+   -------------------------------------------------------------------------- */
+.grelha-equipa {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
+  max-width: 920px;
+  margin-inline: auto;
+}
+.cartao-membro { text-align: center; padding: 2.2rem 1.4rem; }
+.cartao-membro__avatar {
+  width: 96px; height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1.2rem;
+  box-shadow: var(--sombra-suave);
+}
+.cartao-membro__avatar img { width: 100%; height: 100%; object-fit: cover; }
+.cartao-membro h3 { font-size: 1.02rem; margin-bottom: 0.25rem; }
+.cartao-membro p { font-size: 0.88rem; color: var(--cor-cinza-medio); }
+
+/* --------------------------------------------------------------------------
+   O que nos diferencia
+   -------------------------------------------------------------------------- */
+.grelha-diferenciais {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0 2.5rem;
+  max-width: 920px;
+  margin-inline: auto;
+}
+.grelha-diferenciais li {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  font-size: 0.98rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--cor-cinza-claro);
+}
+.grelha-diferenciais li svg { width: 22px; height: 22px; color: var(--cor-verde-medio-claro); flex-shrink: 0; margin-top: 1px; }
+
+/* --------------------------------------------------------------------------
+   Responsividade própria desta página
+   -------------------------------------------------------------------------- */
+@media (min-width: 640px) {
+  .grelha-valores { grid-template-columns: repeat(2, 1fr); }
+  .grelha-equipa { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 700px) {
+  .grelha-diferenciais { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1024px) {
+  .grelha-valores { grid-template-columns: repeat(3, 1fr); }
+}

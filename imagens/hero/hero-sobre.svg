@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500" role="img">
+<defs>
+<linearGradient id="gherosobresvg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#2D6A4F"/>
+<stop offset="100%" stop-color="#52A37C"/>
+</linearGradient>
+<linearGradient id="gherosobresvg-fundo" x1="0%" y1="100%" x2="0%" y2="0%">
+<stop offset="0%" stop-color="#0B1F17" stop-opacity="0.85"/>
+<stop offset="45%" stop-color="#0B1F17" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<rect width="1600" height="500" fill="url(#gherosobresvg)"/>
+
+<g opacity="0.10" fill="#FFFFFF">
+<circle cx="621" cy="52" r="60"/>
+<circle cx="980" cy="79" r="80"/>
+<circle cx="136" cy="10" r="41"/>
+<circle cx="1125" cy="469" r="81"/>
+<circle cx="1567" cy="30" r="67"/>
+<circle cx="1065" cy="274" r="58"/>
+</g>
+<g opacity="0.07" fill="#000000">
+<circle cx="1472" cy="356" r="98"/>
+<circle cx="1411" cy="39" r="67"/>
+<circle cx="1513" cy="62" r="117"/>
+<circle cx="782" cy="236" r="123"/>
+</g>
+<g transform="translate(49.336794187286614,-432.6632058127134) scale(5.7766320581271335)" opacity="0.08"><path d="M15,155 L58,88 L92,132 L128,55 L185,155 Z" fill="#FFFFFF"/></g>
+<g transform="translate(-577.8947607949735,-422.89476079497354) scale(6.708947607949735)" opacity="0.08"><rect x="90" y="118" width="20" height="58" rx="5" fill="#FFFFFF"/>
+<circle cx="100" cy="92" r="54" fill="#FFFFFF"/>
+<circle cx="62" cy="113" r="34" fill="#FFFFFF" opacity="0.88"/>
+<circle cx="138" cy="113" r="34" fill="#FFFFFF" opacity="0.88"/></g>
+<g transform="translate(-437.57365297175306,-436.57365297175306) scale(6.825736529717531)" opacity="0.08"><path d="M15,155 L58,88 L92,132 L128,55 L185,155 Z" fill="#FFFFFF"/></g>
+<g transform="translate(-193.97474261730315,-313.97474261730315) scale(6.199747426173031)" opacity="0.08"><path d="M100,28 C152,50 164,112 100,182 C36,112 48,50 100,28 Z" fill="#FFFFFF"/>
+<path d="M100,44 L100,168 M100,88 L74,73 M100,120 L126,104 M100,150 L76,137" stroke="#0F2E22" stroke-width="3" opacity="0.30" fill="none" stroke-linecap="round"/></g>
+<g transform="translate(157.1661645324417,-308.8338354675583) scale(4.098338354675583)" opacity="0.08"><path d="M15,155 L58,88 L92,132 L128,55 L185,155 Z" fill="#FFFFFF"/></g>
+<rect x="0" y="190" width="1600" height="310" fill="url(#gherosobresvg-fundo)"/>
+<g>
+<rect x="1422" y="16" width="160" height="26" rx="13" fill="#0B1F17" opacity="0.55"/>
+<text x="1502" y="33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#FFFFFF">IMAGEM DEMONSTRATIVA</text>
+</g>
+<g transform="translate(72.48484848484853,98.4848484848485) scale(1.5151515151515151)" opacity="0.14"><path d="M100,28 C152,50 164,112 100,182 C36,112 48,50 100,28 Z" fill="#FFFFFF"/>
+<path d="M100,44 L100,168 M100,88 L74,73 M100,120 L126,104 M100,150 L76,137" stroke="#0F2E22" stroke-width="3" opacity="0.30" fill="none" stroke-linecap="round"/></g>
+<text x="96" y="360" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="55" font-weight="800" fill="#FFFFFF">A Nossa História</text>
+<text x="96" y="394" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#E7F3EC" opacity="0.88">Imagem de cabeçalho a substituir</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500" role="img">
+<defs>
+<linearGradient id="gheroprodutossvg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#245240"/>
+<stop offset="100%" stop-color="#40916C"/>
+</linearGradient>
+<linearGradient id="gheroprodutossvg-fundo" x1="0%" y1="100%" x2="0%" y2="0%">
+<stop offset="0%" stop-color="#0B1F17" stop-opacity="0.85"/>
+<stop offset="45%" stop-color="#0B1F17" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<rect width="1600" height="500" fill="url(#gheroprodutossvg)"/>
+
+<g opacity="0.10" fill="#FFFFFF">
+<circle cx="1213" cy="278" r="60"/>
+<circle cx="757" cy="468" r="46"/>
+<circle cx="970" cy="320" r="107"/>
+<circle cx="134" cy="310" r="104"/>
+<circle cx="960" cy="132" r="31"/>
+<circle cx="479" cy="98" r="100"/>
+</g>
+<g opacity="0.07" fill="#000000">
+<circle cx="1385" cy="315" r="58"/>
+<circle cx="347" cy="283" r="85"/>
+<circle cx="1244" cy="93" r="124"/>
+<circle cx="599" cy="316" r="89"/>
+</g>
+<g transform="translate(359.68843088951286,-349.31156911048714) scale(4.883115691104871)" opacity="0.08"><rect x="90" y="118" width="20" height="58" rx="5" fill="#FFFFFF"/>
+<circle cx="100" cy="92" r="54" fill="#FFFFFF"/>
+<circle cx="62" cy="113" r="34" fill="#FFFFFF" opacity="0.88"/>
+<circle cx="138" cy="113" r="34" fill="#FFFFFF" opacity="0.88"/></g>
+<g transform="translate(-357.37262761675174,-466.37262761675174) scale(6.113726276167517)" opacity="0.08"><rect x="90" y="118" width="20" height="58" rx="5" fill="#FFFFFF"/>
+<circle cx="100" cy="92" r="54" fill="#FFFFFF"/>
+<circle cx="62" cy="113" r="34" fill="#FFFFFF" opacity="0.88"/>
+<circle cx="138" cy="113" r="34" fill="#FFFFFF" opacity="0.88"/></g>
+<g transform="translate(466.4548312449508,-468.5451687550492) scale(6.505451687550492)" opacity="0.08"><rect x="90" y="118" width="20" height="58" rx="5" fill="#FFFFFF"/>
+<circle cx="100" cy="92" r="54" fill="#FFFFFF"/>
+<circle cx="62" cy="113" r="34" fill="#FFFFFF" opacity="0.88"/>
+<circle cx="138" cy="113" r="34" fill="#FFFFFF" opacity="0.88"/></g>
+<g transform="translate(431.79241589346475,-264.20758410653525) scale(5.882075841065353)" opacity="0.08"><path d="M15,155 L58,88 L92,132 L128,55 L185,155 Z" fill="#FFFFFF"/></g>
+<g transform="translate(757.3040973681686,-322.6959026318314) scale(4.956959026318314)" opacity="0.08"><path d="M15,155 L58,88 L92,132 L128,55 L185,155 Z" fill="#FFFFFF"/></g>
+<rect x="0" y="190" width="1600" height="310" fill="url(#gheroprodutossvg-fundo)"/>
+<g>
+<rect x="1422" y="16" width="160" height="26" rx="13" fill="#0B1F17" opacity="0.55"/>
+<text x="1502" y="33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#FFFFFF">IMAGEM DEMONSTRATIVA</text>
+</g>
+<g transform="translate(72.48484848484853,98.4848484848485) scale(1.5151515151515151)" opacity="0.14"><line x1="118" y1="98" x2="162" y2="42" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+<g fill="#FFFFFF">
+<rect x="42" y="98" width="114" height="56" rx="22"/>
+<circle cx="68" cy="166" r="19"/>
+<circle cx="140" cy="166" r="19"/>
+</g></g>
+<text x="96" y="360" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="55" font-weight="800" fill="#FFFFFF">Produtos e Equipamentos</text>
+<text x="96" y="394" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#E7F3EC" opacity="0.88">Imagem de cabeçalho a substituir</text>
+</svg>

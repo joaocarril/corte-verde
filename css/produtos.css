@@ -1,0 +1,101 @@
+/* ==========================================================================
+   CORTE CERTO — produtos.css
+   Estilos específicos da página "Produtos" (paginas/produtos/produtos.html).
+   Complementa css/style.css — aqui ficam apenas as regras exclusivas desta
+   página: filtro de categorias e cartão de produto completo.
+   ========================================================================== */
+
+/* Filtro por categoria */
+.filtro-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: var(--espaco-xl);
+}
+.filtro-produtos__btn {
+  padding: 0.65rem 1.35rem;
+  border-radius: 50px;
+  border: 1.5px solid var(--cor-cinza-claro);
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--cor-cinza-medio);
+  transition: background-color var(--transicao), border-color var(--transicao), color var(--transicao), transform var(--transicao);
+}
+.filtro-produtos__btn:hover { border-color: var(--cor-verde-medio-claro); color: var(--cor-verde-medio-claro); transform: translateY(-2px); }
+.filtro-produtos__btn[aria-pressed="true"] {
+  background-color: var(--cor-verde-escuro);
+  border-color: var(--cor-verde-escuro);
+  color: #fff;
+}
+
+/* Grelha de produtos */
+.grelha-produtos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.2rem 1.8rem;
+}
+
+/* Cartão de produto completo */
+.cartao-produto-completo__imagem { position: relative; aspect-ratio: 4 / 3; overflow: hidden; }
+.cartao-produto-completo__imagem img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.55s ease;
+}
+.cartao-produto-completo:hover .cartao-produto-completo__imagem img { transform: scale(1.08); }
+
+.cartao-produto-completo__categoria {
+  position: absolute;
+  top: 1rem; left: 1rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: var(--cor-verde-escuro);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.4rem 0.85rem;
+  border-radius: 50px;
+}
+
+.cartao-produto-completo__corpo { padding: 1.7rem 1.5rem 1.8rem; display: flex; flex-direction: column; flex-grow: 1; }
+.cartao-produto-completo__corpo h3 { font-size: 1.15rem; margin-bottom: 0.6rem; }
+.cartao-produto-completo__corpo > p { color: var(--cor-cinza-medio); font-size: 0.92rem; margin-bottom: 1.1rem; }
+
+.cartao-produto-completo__caracteristicas { margin-bottom: 1.2rem; display: flex; flex-direction: column; gap: 0.5rem; flex-grow: 1; }
+.cartao-produto-completo__caracteristicas li {
+  font-size: 0.87rem;
+  color: var(--cor-cinza-texto);
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+.cartao-produto-completo__caracteristicas li::before {
+  content: "";
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background-color: var(--cor-verde-medio-claro);
+  margin-top: 0.55rem;
+  flex-shrink: 0;
+}
+
+.cartao-produto-completo__nota { font-size: 0.82rem; color: var(--cor-cinza-medio); font-style: italic; margin-bottom: 1.1rem; }
+
+.cartao-produto-completo[hidden] { display: none; }
+
+.sem-resultados {
+  display: none;
+  text-align: center;
+  color: var(--cor-cinza-medio);
+  padding: 3rem 1rem;
+  font-size: 1.02rem;
+}
+.sem-resultados.visivel { display: block; }
+
+@media (min-width: 640px) {
+  .grelha-produtos { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1100px) {
+  .grelha-produtos { grid-template-columns: repeat(3, 1fr); }
+}

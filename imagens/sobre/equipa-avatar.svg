@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" role="img">
+<defs>
+<linearGradient id="gequipaavatarsvg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#3A7A5C"/>
+<stop offset="100%" stop-color="#74C69D"/>
+</linearGradient>
+<linearGradient id="gequipaavatarsvg-fundo" x1="0%" y1="100%" x2="0%" y2="0%">
+<stop offset="0%" stop-color="#0B1F17" stop-opacity="0.85"/>
+<stop offset="45%" stop-color="#0B1F17" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<rect width="320" height="320" fill="url(#gequipaavatarsvg)"/>
+
+<g opacity="0.10" fill="#FFFFFF">
+<circle cx="240" cy="57" r="19"/>
+<circle cx="201" cy="72" r="67"/>
+<circle cx="22" cy="71" r="62"/>
+<circle cx="274" cy="118" r="26"/>
+<circle cx="71" cy="75" r="64"/>
+<circle cx="16" cy="31" r="66"/>
+</g>
+<g opacity="0.07" fill="#000000">
+<circle cx="217" cy="139" r="58"/>
+<circle cx="225" cy="234" r="75"/>
+<circle cx="183" cy="122" r="26"/>
+<circle cx="173" cy="113" r="62"/>
+</g>
+<g transform="translate(85.5813953488372,66.38139534883722) scale(0.7441860465116279)" opacity="0.9"><circle cx="100" cy="68" r="38" fill="#FFFFFF"/>
+<path d="M38,186 C38,138 64,112 100,112 C136,112 162,138 162,186 Z" fill="#FFFFFF"/></g>
+<rect x="0" y="230" width="320" height="90" fill="url(#gequipaavatarsvg-fundo)"/>
+<g>
+<rect x="207" y="16" width="95" height="26" rx="13" fill="#0B1F17" opacity="0.55"/>
+<text x="254" y="33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#FFFFFF">PLACEHOLDER</text>
+</g>
+<text x="160" y="282" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Membro da Equipa</text>
+<text x="160" y="306" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#E7F3EC" opacity="0.85">Substituir</text>
+</svg>

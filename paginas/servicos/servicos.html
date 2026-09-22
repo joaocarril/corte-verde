@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Os Nossos Serviços | Corte Certo</title>
+  <meta name="description" content="Conheça todos os serviços da Corte Certo: limpeza de terrenos, limpeza de jardins, desmatação, poda de árvores e arbustos, manutenção de espaços verdes e muito mais.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Os Nossos Serviços | Corte Certo">
+  <meta property="og:description" content="Serviços profissionais de limpeza e manutenção de jardins e terrenos.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_PT">
+
+  <link rel="icon" type="image/svg+xml" href="../../imagens/logo/favicon.svg">
+
+  <!-- Google Fonts (opcional) — ver instruções em css/style.css e no README.md -->
+
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/servicos.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#conteudo-principal">Saltar para o conteúdo principal</a>
+
+  <!-- ==================== CABEÇALHO ==================== -->
+  <header class="cabecalho">
+    <div class="cabecalho__container">
+      <a href="../../index.html" class="logo" aria-label="Corte Certo — página inicial">
+        <img src="../../imagens/logo/logo-corte-certo.svg" alt="Corte Certo" width="220" height="58">
+      </a>
+
+      <nav class="nav-principal" id="menu-principal" aria-label="Navegação principal">
+        <ul class="nav-principal__lista">
+          <li class="nav-principal__item"><a href="../../index.html" class="nav-principal__link">Início</a></li>
+          <li class="nav-principal__item"><a href="servicos.html" class="nav-principal__link" aria-current="page">Serviços</a></li>
+          <li class="nav-principal__item"><a href="../produtos/produtos.html" class="nav-principal__link">Produtos</a></li>
+          <li class="nav-principal__item"><a href="../sobre/sobre.html" class="nav-principal__link">Sobre Nós</a></li>
+          <li class="nav-principal__item"><a href="../../index.html#contacto" class="nav-principal__link">Contactos</a></li>
+          <li class="nav-principal__item nav-principal__item--cta">
+            <a href="../../index.html#contacto" class="btn btn--primario">Pedir Orçamento</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button type="button" class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="menu-principal">
+        <span class="menu-toggle__linha"></span>
+        <span class="menu-toggle__linha"></span>
+        <span class="menu-toggle__linha"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+
+    <!-- ==================== HERO DA PÁGINA ==================== -->
+    <section class="hero hero--pagina" aria-label="Cabeçalho da página de serviços">
+      <img class="hero__fundo" src="../../imagens/hero/hero-servicos.svg" alt="" aria-hidden="true">
+      <div class="hero__camada"></div>
+      <div class="container">
+        <div class="hero__conteudo">
+          <p class="trilha">
+            <a href="../../index.html">Início</a> <span aria-hidden="true">/</span> <span>Serviços</span>
+          </p>
+          <h1 class="hero__titulo">Os nossos serviços</h1>
+          <p class="hero__texto">
+            Da limpeza de pequenos jardins à desmatação de grandes terrenos: conheça todos os
+            serviços que a Corte Certo tem para o seu espaço exterior.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== GRELHA DE SERVIÇOS ==================== -->
+    <section class="secao" aria-labelledby="titulo-lista-servicos">
+      <div class="container">
+        <h2 class="visualmente-oculto" id="titulo-lista-servicos">Lista completa de serviços</h2>
+
+        <div class="pesquisa-servicos">
+          <svg class="pesquisa-servicos__icone" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.3" y1="15.3" x2="21" y2="21"/>
+          </svg>
+          <label for="pesquisa-servico" class="visualmente-oculto">Pesquisar um serviço</label>
+          <input type="search" id="pesquisa-servico" placeholder="Pesquisar um serviço (ex.: poda, relva, terreno...)">
+          <p class="pesquisa-servicos__resultado visualmente-oculto" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="grelha-servicos">
+
+          <!-- 1. Limpeza de Terrenos -->
+          <article class="cartao cartao-servico reveal" id="limpeza-terrenos">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/limpeza-terrenos.svg" alt="Limpeza de Terrenos — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><polyline points="3,17 8,9 12,14 16,7 21,17"/><line x1="3" y1="20" x2="21" y2="20"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Limpeza de Terrenos</h3>
+              <p>Remoção completa de vegetação, ervas, mato e resíduos, preparando o terreno para o que precisar.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Terreno limpo</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Equipamento profissional</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Sem compromisso</li>
+              </ul>
+              <a href="../../index.html?servico=Limpeza%20de%20Terrenos#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 2. Limpeza de Jardins -->
+          <article class="cartao cartao-servico reveal" id="limpeza-jardins">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/limpeza-jardins.svg" alt="Limpeza de Jardins — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path d="M12 3c6 1 8 6 8 9s-2 8-8 9c-6-1-8-6-8-9s2-8 8-9z"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Limpeza de Jardins</h3>
+              <p>Limpeza cuidada de jardins e espaços verdes, mantendo cada canteiro e relvado bem tratado.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Cuidado ao detalhe</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Jardim organizado</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Equipa experiente</li>
+              </ul>
+              <a href="../../index.html?servico=Limpeza%20de%20Jardins#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 3. Corte de Ervas -->
+          <article class="cartao cartao-servico reveal" id="corte-ervas">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/corte-ervas.svg" alt="Corte de Ervas — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path d="M6 20 Q4 12 7 5"/><path d="M12 20 Q12 10 12 4"/><path d="M18 20 Q20 12 17 5"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Corte de Ervas</h3>
+              <p>Corte regular de ervas daninhas e vegetação espontânea, prevenindo o crescimento descontrolado.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Corte uniforme</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Prevenção de pragas</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Serviço regular</li>
+              </ul>
+              <a href="../../index.html?servico=Corte%20de%20Ervas#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 4. Corte de Mato -->
+          <article class="cartao cartao-servico reveal" id="corte-mato">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/corte-mato.svg" alt="Corte de Mato — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><circle cx="7" cy="14" r="4"/><circle cx="13" cy="11" r="5"/><circle cx="18.5" cy="15" r="3.5"/><line x1="3" y1="20" x2="21" y2="20"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Corte de Mato</h3>
+              <p>Corte e controlo de mato em terrenos de qualquer dimensão, com equipamento robusto.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Qualquer área</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Equipamento robusto</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Rapidez</li>
+              </ul>
+              <a href="../../index.html?servico=Corte%20de%20Mato#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 5. Desmatação -->
+          <article class="cartao cartao-servico reveal" id="desmatacao">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/corte-mato.svg" alt="Desmatação — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><circle cx="7" cy="14" r="4"/><circle cx="13" cy="11" r="5"/><circle cx="18.5" cy="15" r="3.5"/><line x1="3" y1="20" x2="21" y2="20"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Desmatação</h3>
+              <p>Limpeza de terrenos com vegetação densa e de difícil acesso, incluindo mato alto e silvas.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Vegetação densa</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Terrenos difíceis</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Prevenção de incêndios</li>
+              </ul>
+              <a href="../../index.html?servico=Desmata%C3%A7%C3%A3o#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 6. Roçagem -->
+          <article class="cartao cartao-servico reveal" id="rocagem">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/corte-ervas.svg" alt="Roçagem — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path d="M6 20 Q4 12 7 5"/><path d="M12 20 Q12 10 12 4"/><path d="M18 20 Q20 12 17 5"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Roçagem</h3>
+              <p>Roçagem mecânica de terrenos, uma solução eficaz para a prevenção de incêndios rurais.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Prevenção de incêndios</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Cobertura ampla</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Trabalho mecanizado</li>
+              </ul>
+              <a href="../../index.html?servico=Ro%C3%A7agem#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 7. Poda de Árvores -->
+          <article class="cartao cartao-servico reveal" id="poda-arvores">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/poda-arvores.svg" alt="Poda de Árvores — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><line x1="8" y1="15.5" x2="19" y2="4"/><line x1="15.5" y1="15.5" x2="4" y2="4"/><circle cx="6" cy="17" r="2.6"/><circle cx="17" cy="17" r="2.6"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Poda de Árvores</h3>
+              <p>Poda técnica de árvores para promover a sua saúde, segurança e melhor desenvolvimento.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Árvores saudáveis</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Técnica especializada</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Segurança</li>
+              </ul>
+              <a href="../../index.html?servico=Poda%20de%20%C3%81rvores%20e%20Arbustos#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 8. Poda de Arbustos -->
+          <article class="cartao cartao-servico reveal" id="poda-arbustos">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/poda-arbustos-sebes.svg" alt="Poda de Arbustos — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><line x1="8" y1="15.5" x2="19" y2="4"/><line x1="15.5" y1="15.5" x2="4" y2="4"/><circle cx="6" cy="17" r="2.6"/><circle cx="17" cy="17" r="2.6"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Poda de Arbustos</h3>
+              <p>Modelação e manutenção de arbustos ornamentais, mantendo o jardim com um aspeto cuidado.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Aspeto cuidado</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Formas definidas</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Manutenção regular</li>
+              </ul>
+              <a href="../../index.html?servico=Poda%20de%20%C3%81rvores%20e%20Arbustos#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 9. Corte de Sebes -->
+          <article class="cartao cartao-servico reveal" id="corte-sebes">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/poda-arbustos-sebes.svg" alt="Corte de Sebes — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><circle cx="6" cy="14" r="3"/><circle cx="12" cy="14" r="3"/><circle cx="18" cy="14" r="3"/><line x1="2" y1="19" x2="22" y2="19"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Corte de Sebes</h3>
+              <p>Corte e alinhamento profissional de sebes, garantindo linhas uniformes e bem definidas.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Linhas uniformes</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Acabamento profissional</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Sebes saudáveis</li>
+              </ul>
+              <a href="../../index.html?servico=Corte%20de%20Sebes#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 10. Limpeza de Terrenos Abandonados -->
+          <article class="cartao cartao-servico reveal" id="terrenos-abandonados">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/limpeza-terrenos.svg" alt="Limpeza de Terrenos Abandonados — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><polyline points="3,17 8,9 12,14 16,7 21,17"/><line x1="3" y1="20" x2="21" y2="20"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Limpeza de Terrenos Abandonados</h3>
+              <p>Recuperação de terrenos ao abandono, devolvendo-lhes um estado limpo e seguro.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Recuperação total</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Terreno seguro</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Prevenção de riscos</li>
+              </ul>
+              <a href="../../index.html?servico=Limpeza%20de%20Terrenos%20Abandonados#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 11. Limpeza de Terrenos para Construção -->
+          <article class="cartao cartao-servico reveal" id="terrenos-construcao">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/limpeza-terrenos.svg" alt="Limpeza de Terrenos para Construção — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><rect x="3.5" y="10" width="17" height="9" rx="2"/><path d="M9 10V7.5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2V10"/><rect x="10.5" y="13" width="3" height="2.5" rx="0.4"/><line x1="3.5" y1="14.5" x2="20.5" y2="14.5"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Limpeza de Terrenos para Construção</h3>
+              <p>Preparação e limpeza de terrenos antes do início de obras de construção.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Pronto a construir</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Remoção de entulho vegetal</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Rapidez</li>
+              </ul>
+              <a href="../../index.html?servico=Limpeza%20de%20Terrenos%20para%20Constru%C3%A7%C3%A3o#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 12. Limpeza de Terrenos Agrícolas -->
+          <article class="cartao cartao-servico reveal" id="terrenos-agricolas">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/corte-ervas.svg" alt="Limpeza de Terrenos Agrícolas — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path d="M6 20 Q4 12 7 5"/><path d="M12 20 Q12 10 12 4"/><path d="M18 20 Q20 12 17 5"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Limpeza de Terrenos Agrícolas</h3>
+              <p>Limpeza de campos e terrenos agrícolas, facilitando o seu aproveitamento e manutenção.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Terrenos agrícolas</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Aproveitamento facilitado</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Equipa experiente</li>
+              </ul>
+              <a href="../../index.html?servico=Limpeza%20de%20Terrenos%20Agr%C3%ADcolas#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 13. Manutenção de Jardins -->
+          <article class="cartao cartao-servico reveal" id="manutencao-jardins">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/limpeza-jardins.svg" alt="Manutenção de Jardins — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path d="M12 3c6 1 8 6 8 9s-2 8-8 9c-6-1-8-6-8-9s2-8 8-9z"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Manutenção de Jardins</h3>
+              <p>Manutenção periódica e programada de jardins, garantindo um espaço sempre cuidado.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Visitas programadas</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Jardim sempre cuidado</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Serviço contínuo</li>
+              </ul>
+              <a href="../../index.html?servico=Manuten%C3%A7%C3%A3o%20de%20Jardins#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 14. Manutenção de Espaços Verdes -->
+          <article class="cartao cartao-servico reveal" id="manutencao-espacos-verdes">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/manutencao-espacos-verdes.svg" alt="Manutenção de Espaços Verdes — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><circle cx="14" cy="7" r="2"/><line x1="4" y1="12" x2="20" y2="12"/><circle cx="8" cy="12" r="2"/><line x1="4" y1="17" x2="20" y2="17"/><circle cx="16" cy="17" r="2"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Manutenção de Espaços Verdes</h3>
+              <p>Cuidado contínuo de espaços verdes públicos ou privados, ao longo de todo o ano.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Públicos e privados</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Todo o ano</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Equipa dedicada</li>
+              </ul>
+              <a href="../../index.html?servico=Manuten%C3%A7%C3%A3o%20de%20Espa%C3%A7os%20Verdes#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 15. Remoção de Resíduos Verdes -->
+          <article class="cartao cartao-servico reveal" id="residuos-verdes">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/residuos-verdes.svg" alt="Remoção de Resíduos Verdes — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><rect x="2.5" y="9" width="11" height="7" rx="1"/><path d="M13.5 11h3.5l3 3.5V16h-6.5z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Remoção de Resíduos Verdes</h3>
+              <p>Recolha e transporte de resíduos verdes resultantes dos trabalhos de limpeza e corte.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Recolha incluída</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Transporte adequado</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Espaço limpo no final</li>
+              </ul>
+              <a href="../../index.html?servico=Remo%C3%A7%C3%A3o%20de%20Res%C3%ADduos%20Verdes#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 16. Limpeza Pós-Corte -->
+          <article class="cartao cartao-servico reveal" id="limpeza-pos-corte">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/residuos-verdes.svg" alt="Limpeza Pós-Corte — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><line x1="17" y1="3" x2="9" y2="14"/><polygon points="9,14 4,20 15,20"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Limpeza Pós-Corte</h3>
+              <p>Limpeza final do espaço após os trabalhos de corte, sem deixar vestígios de vegetação cortada.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Acabamento cuidado</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Espaço impecável</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Incluído no serviço</li>
+              </ul>
+              <a href="../../index.html?servico=Limpeza%20P%C3%B3s-Corte#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 17. Preparação de Terrenos -->
+          <article class="cartao cartao-servico reveal" id="preparacao-terrenos">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/limpeza-terrenos.svg" alt="Preparação de Terrenos — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><polyline points="3,17 8,9 12,14 16,7 21,17"/><line x1="3" y1="20" x2="21" y2="20"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Preparação de Terrenos</h3>
+              <p>Preparação de terrenos para novos projetos, plantações ou outras utilizações futuras.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Terreno pronto</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Novos projetos</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Apoio técnico</li>
+              </ul>
+              <a href="../../index.html?servico=Prepara%C3%A7%C3%A3o%20de%20Terrenos#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+          <!-- 18. Outros Serviços Personalizados -->
+          <article class="cartao cartao-servico reveal" id="servicos-personalizados">
+            <div class="cartao-servico__imagem">
+              <img src="../../imagens/servicos/servico-personalizado.svg" alt="Outros Serviços Personalizados — imagem demonstrativa" loading="lazy">
+              <span class="cartao-servico__icone icone-caixa">
+                <svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+              </span>
+            </div>
+            <div class="cartao-servico__corpo">
+              <h3>Outros Serviços Personalizados</h3>
+              <p>Soluções à medida das necessidades específicas do seu terreno ou jardim. Fale connosco.</p>
+              <ul class="cartao-servico__beneficios">
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Solução à medida</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Fale connosco</li>
+                <li><svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg>Orçamento personalizado</li>
+              </ul>
+              <a href="../../index.html?servico=Outro#contacto" class="btn btn--primario btn--pequeno btn--bloco">Pedir Orçamento</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="sem-resultados">Não encontrámos nenhum serviço com esse termo. Tente outra palavra ou <a href="../../index.html?servico=Outro#contacto">fale connosco</a> diretamente.</p>
+      </div>
+    </section>
+
+    <!-- ==================== CTA FINAL ==================== -->
+    <section class="secao secao--escuro" aria-labelledby="titulo-cta-servicos">
+      <div class="container texto-centrado reveal">
+        <h2 class="secao-titulo" id="titulo-cta-servicos">Não encontrou o serviço que procura?</h2>
+        <p class="secao-intro">Fale connosco: encontramos a solução certa para o seu jardim ou terreno.</p>
+        <a href="../../index.html?servico=Outro#contacto" class="btn btn--destaque">Pedir Orçamento</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== RODAPÉ ==================== -->
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape__topo">
+
+        <div class="rodape__marca">
+          <img src="../../imagens/logo/logo-corte-certo-branco.svg" alt="Corte Certo" width="200" height="52">
+          <p class="rodape__descricao">
+            Serviços profissionais de limpeza e manutenção de jardins, terrenos e espaços
+            exteriores em Portugal.
+          </p>
+          <div class="rodape__redes">
+            <a href="#" class="rodape__link-social" aria-label="Facebook da Corte Certo" title="[LINK FACEBOOK]">
+              <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><circle cx="12" cy="12" r="9"/><line x1="10" y1="8" x2="10" y2="19"/><line x1="10" y1="8" x2="15" y2="8"/><line x1="10" y1="13" x2="14" y2="13"/></svg>
+            </a>
+            <a href="#" class="rodape__link-social" aria-label="Instagram da Corte Certo" title="[LINK INSTAGRAM]">
+              <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="rodape__link-social" aria-label="WhatsApp da Corte Certo" title="[LINK WHATSAPP]">
+              <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="6.5"/><polygon points="7.5,17 7.5,21 12,17"/><circle cx="9.5" cy="10.5" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="10.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="rodape__link-social" aria-label="TikTok da Corte Certo" title="[LINK TIKTOK]">
+              <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><circle cx="9" cy="17" r="3"/><line x1="12" y1="17" x2="12" y2="5"/><polyline points="12,5 17,6.5 17,10"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="rodape__coluna" aria-label="Links rápidos">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="../../index.html">Início</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="../produtos/produtos.html">Produtos</a></li>
+            <li><a href="../sobre/sobre.html">Sobre Nós</a></li>
+            <li><a href="../../index.html#contacto">Contactos</a></li>
+          </ul>
+        </nav>
+
+        <nav class="rodape__coluna" aria-label="Principais serviços">
+          <h3>Serviços</h3>
+          <ul>
+            <li><a href="#limpeza-terrenos">Limpeza de Terrenos</a></li>
+            <li><a href="#limpeza-jardins">Limpeza de Jardins</a></li>
+            <li><a href="#poda-arvores">Poda de Árvores</a></li>
+            <li><a href="#desmatacao">Desmatação</a></li>
+          </ul>
+        </nav>
+
+        <div class="rodape__coluna">
+          <h3>Contactos</h3>
+          <ul>
+            <li><a href="tel:+351XXXXXXXXX">[INSERIR TELEFONE]</a></li>
+            <li><a href="mailto:INSERIR_EMAIL@corte-certo.pt">[INSERIR EMAIL]</a></li>
+            <li><address>[INSERIR LOCALIZAÇÃO]</address></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="rodape__base">
+        <p>&copy; <span class="ano-atual">2026</span> Corte Certo. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="botao-topo" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="6,11 12,5 18,11"/></svg>
+  </button>
+
+  <script src="../../js/main.js"></script>
+  <script src="../../js/servicos.js"></script>
+</body>
+</html>
