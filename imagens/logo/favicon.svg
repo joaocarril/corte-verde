@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Corte Certo">
+<rect width="64" height="64" rx="14" fill="#1B4332"/>
+<g transform="translate(10,10) scale(0.22)"><path d="M100,28 C152,50 164,112 100,182 C36,112 48,50 100,28 Z" fill="#FFFFFF"/>
+<path d="M100,44 L100,168 M100,88 L74,73 M100,120 L126,104 M100,150 L76,137" stroke="#0F2E22" stroke-width="3" opacity="0.30" fill="none" stroke-linecap="round"/></g>
+</svg>

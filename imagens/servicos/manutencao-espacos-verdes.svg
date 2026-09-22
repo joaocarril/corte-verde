@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img">
+<defs>
+<linearGradient id="gmanutencaoespacosverdessvg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#3A7A5C"/>
+<stop offset="100%" stop-color="#74C69D"/>
+</linearGradient>
+<linearGradient id="gmanutencaoespacosverdessvg-fundo" x1="0%" y1="100%" x2="0%" y2="0%">
+<stop offset="0%" stop-color="#0B1F17" stop-opacity="0.85"/>
+<stop offset="45%" stop-color="#0B1F17" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<rect width="800" height="600" fill="url(#gmanutencaoespacosverdessvg)"/>
+
+<g opacity="0.10" fill="#FFFFFF">
+<circle cx="480" cy="492" r="82"/>
+<circle cx="426" cy="232" r="72"/>
+<circle cx="5" cy="419" r="93"/>
+<circle cx="728" cy="265" r="120"/>
+<circle cx="650" cy="227" r="66"/>
+<circle cx="303" cy="309" r="37"/>
+</g>
+<g opacity="0.07" fill="#000000">
+<circle cx="201" cy="116" r="84"/>
+<circle cx="114" cy="342" r="116"/>
+<circle cx="562" cy="299" r="144"/>
+<circle cx="655" cy="291" r="134"/>
+</g>
+<g transform="translate(260.4651162790698,124.46511627906978) scale(1.3953488372093024)" opacity="0.9"><g stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round">
+<line x1="58" y1="152" x2="148" y2="58"/>
+<line x1="142" y1="152" x2="52" y2="58"/>
+<circle cx="60" cy="152" r="17"/>
+<circle cx="140" cy="152" r="17"/>
+</g>
+<circle cx="100" cy="105" r="7" fill="#FFFFFF"/></g>
+<rect x="0" y="456" width="800" height="144" fill="url(#gmanutencaoespacosverdessvg-fundo)"/>
+<g>
+<rect x="622" y="16" width="160" height="26" rx="13" fill="#0B1F17" opacity="0.55"/>
+<text x="702" y="33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#FFFFFF">IMAGEM DEMONSTRATIVA</text>
+</g>
+<text x="400" y="540" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#FFFFFF">Manutenção de Espaços Verdes</text>
+<text x="400" y="578" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#E7F3EC" opacity="0.85">Imagem demonstrativa — substituir por fotografia real</text>
+</svg>

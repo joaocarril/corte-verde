@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img">
+<defs>
+<linearGradient id="gpodaarvoressvg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#245240"/>
+<stop offset="100%" stop-color="#40916C"/>
+</linearGradient>
+<linearGradient id="gpodaarvoressvg-fundo" x1="0%" y1="100%" x2="0%" y2="0%">
+<stop offset="0%" stop-color="#0B1F17" stop-opacity="0.85"/>
+<stop offset="45%" stop-color="#0B1F17" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<rect width="800" height="600" fill="url(#gpodaarvoressvg)"/>
+
+<g opacity="0.10" fill="#FFFFFF">
+<circle cx="630" cy="539" r="49"/>
+<circle cx="277" cy="261" r="67"/>
+<circle cx="751" cy="74" r="73"/>
+<circle cx="460" cy="310" r="120"/>
+<circle cx="700" cy="406" r="95"/>
+<circle cx="796" cy="121" r="86"/>
+</g>
+<g opacity="0.07" fill="#000000">
+<circle cx="669" cy="281" r="51"/>
+<circle cx="489" cy="563" r="50"/>
+<circle cx="244" cy="446" r="92"/>
+<circle cx="69" cy="308" r="51"/>
+</g>
+<g transform="translate(260.4651162790698,124.46511627906978) scale(1.3953488372093024)" opacity="0.9"><rect x="90" y="118" width="20" height="58" rx="5" fill="#FFFFFF"/>
+<circle cx="100" cy="92" r="54" fill="#FFFFFF"/>
+<circle cx="62" cy="113" r="34" fill="#FFFFFF" opacity="0.88"/>
+<circle cx="138" cy="113" r="34" fill="#FFFFFF" opacity="0.88"/></g>
+<rect x="0" y="456" width="800" height="144" fill="url(#gpodaarvoressvg-fundo)"/>
+<g>
+<rect x="622" y="16" width="160" height="26" rx="13" fill="#0B1F17" opacity="0.55"/>
+<text x="702" y="33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#FFFFFF">IMAGEM DEMONSTRATIVA</text>
+</g>
+<text x="400" y="540" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#FFFFFF">Poda de Árvores</text>
+<text x="400" y="578" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#E7F3EC" opacity="0.85">Imagem demonstrativa — substituir por fotografia real</text>
+</svg>

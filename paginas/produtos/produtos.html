@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos e Equipamentos | Corte Certo</title>
+  <meta name="description" content="Conheça os equipamentos profissionais utilizados pela Corte Certo: roçadoras, motosserras, cortadores de relva, aparadores de sebes, sopradores, trituradores e muito mais.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Produtos e Equipamentos | Corte Certo">
+  <meta property="og:description" content="Equipamentos profissionais para limpeza e manutenção de jardins e terrenos.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_PT">
+
+  <link rel="icon" type="image/svg+xml" href="../../imagens/logo/favicon.svg">
+
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/produtos.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#conteudo-principal">Saltar para o conteúdo principal</a>
+
+  <!-- ==================== CABEÇALHO ==================== -->
+  <header class="cabecalho">
+    <div class="cabecalho__container">
+      <a href="../../index.html" class="logo" aria-label="Corte Certo — página inicial">
+        <img src="../../imagens/logo/logo-corte-certo.svg" alt="Corte Certo" width="220" height="58">
+      </a>
+
+      <nav class="nav-principal" id="menu-principal" aria-label="Navegação principal">
+        <ul class="nav-principal__lista">
+          <li class="nav-principal__item"><a href="../../index.html" class="nav-principal__link">Início</a></li>
+          <li class="nav-principal__item"><a href="../servicos/servicos.html" class="nav-principal__link">Serviços</a></li>
+          <li class="nav-principal__item"><a href="produtos.html" class="nav-principal__link" aria-current="page">Produtos</a></li>
+          <li class="nav-principal__item"><a href="../sobre/sobre.html" class="nav-principal__link">Sobre Nós</a></li>
+          <li class="nav-principal__item"><a href="../../index.html#contacto" class="nav-principal__link">Contactos</a></li>
+          <li class="nav-principal__item nav-principal__item--cta">
+            <a href="../../index.html#contacto" class="btn btn--primario">Pedir Orçamento</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button type="button" class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="menu-principal">
+        <span class="menu-toggle__linha"></span>
+        <span class="menu-toggle__linha"></span>
+        <span class="menu-toggle__linha"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo-principal">
+
+    <!-- ==================== HERO DA PÁGINA ==================== -->
+    <section class="hero hero--pagina" aria-label="Cabeçalho da página de produtos">
+      <img class="hero__fundo" src="../../imagens/hero/hero-produtos.svg" alt="" aria-hidden="true">
+      <div class="hero__camada"></div>
+      <div class="container">
+        <div class="hero__conteudo">
+          <p class="trilha">
+            <a href="../../index.html">Início</a> <span aria-hidden="true">/</span> <span>Produtos</span>
+          </p>
+          <h1 class="hero__titulo">Produtos e Equipamentos</h1>
+          <p class="hero__texto">
+            Trabalhamos com máquinas e ferramentas profissionais, escolhidas para garantir
+            eficiência e segurança em cada serviço.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== GRELHA DE PRODUTOS ==================== -->
+    <section class="secao" aria-labelledby="titulo-lista-produtos">
+      <div class="container">
+        <h2 class="visualmente-oculto" id="titulo-lista-produtos">Lista de produtos e equipamentos</h2>
+
+        <div class="filtro-produtos" role="group" aria-label="Filtrar produtos por categoria">
+          <button type="button" class="filtro-produtos__btn" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filtro-produtos__btn" data-filtro="corte" aria-pressed="false">Corte de Vegetação</button>
+          <button type="button" class="filtro-produtos__btn" data-filtro="poda" aria-pressed="false">Poda e Corte</button>
+          <button type="button" class="filtro-produtos__btn" data-filtro="limpeza" aria-pressed="false">Limpeza</button>
+          <button type="button" class="filtro-produtos__btn" data-filtro="protecao" aria-pressed="false">Proteção e Ferramentas</button>
+        </div>
+
+        <div class="grelha-produtos">
+
+          <!-- 1. Roçadoras -->
+          <article class="cartao cartao-produto-completo reveal" id="rocadoras" data-categoria="corte">
+            <div class="cartao-produto-completo__imagem">
+              <img src="../../imagens/produtos/rocadoras.svg" alt="Roçadora profissional — imagem demonstrativa" loading="lazy">
+              <span class="cartao-produto-completo__categoria">Corte de Vegetação</span>
+            </div>
+            <div class="cartao-produto-completo__corpo">
+              <h3>Roçadoras</h3>
+              <p>Equipamentos robustos para corte de ervas e vegetação em terrenos de qualquer dimensão.</p>
+              <ul class="cartao-produto-completo__caracteristicas">
+                <li>Adequadas a grandes áreas</li>
+                <li>Diferentes níveis de potência</li>
+                <li>Uso profissional e regular</li>
+              </ul>
+              <p class="cartao-produto-completo__nota">Modelo e preço sob consulta</p>
+              <a href="../../index.html?servico=Outro#contacto" class="btn btn--primario btn--bloco">Pedir Informações</a>
+            </div>
+          </article>
+
+          <!-- 2. Motosserras -->
+          <article class="cartao cartao-produto-completo reveal" id="motosserras" data-categoria="poda">
+            <div class="cartao-produto-completo__imagem">
+              <img src="../../imagens/produtos/motosserras.svg" alt="Motosserra profissional — imagem demonstrativa" loading="lazy">
+              <span class="cartao-produto-completo__categoria">Poda e Corte</span>
+            </div>
+            <div class="cartao-produto-completo__corpo">
+              <h3>Motosserras</h3>
+              <p>Equipamentos profissionais para corte e poda de árvores, com segurança e precisão.</p>
+              <ul class="cartao-produto-completo__caracteristicas">
+                <li>Corte preciso e eficiente</li>
+                <li>Adequadas a diferentes espessuras</li>
+                <li>Uso por equipa especializada</li>
+              </ul>
+              <p class="cartao-produto-completo__nota">Modelo e preço sob consulta</p>
+              <a href="../../index.html?servico=Outro#contacto" class="btn btn--primario btn--bloco">Pedir Informações</a>
+            </div>
+          </article>
+
+          <!-- 3. Cortadores de Relva -->
+          <article class="cartao cartao-produto-completo reveal" id="cortadores-relva" data-categoria="corte">
+            <div class="cartao-produto-completo__imagem">
+              <img src="../../imagens/produtos/cortadores-relva.svg" alt="Cortador de relva — imagem demonstrativa" loading="lazy">
+              <span class="cartao-produto-completo__categoria">Corte de Vegetação</span>
+            </div>
+            <div class="cartao-produto-completo__corpo">
+              <h3>Cortadores de Relva</h3>
+              <p>Equipamentos para manutenção de relvados, com um acabamento uniforme e cuidado.</p>
+              <ul class="cartao-produto-completo__caracteristicas">
+                <li>Corte uniforme do relvado</li>
+                <li>Adequados a diferentes áreas</li>
+                <li>Ideal para manutenção regular</li>
+              </ul>
+              <p class="cartao-produto-completo__nota">Modelo e preço sob consulta</p>
+              <a href="../../index.html?servico=Outro#contacto" class="btn btn--primario btn--bloco">Pedir Informações</a>
+            </div>
+          </article>
+
+          <!-- 4. Aparadores de Sebes -->
+          <article class="cartao cartao-produto-completo reveal" id="aparadores-sebes" data-categoria="poda">
+            <div class="cartao-produto-completo__imagem">
+              <img src="../../imagens/produtos/aparadores-sebes.svg" alt="Aparador de sebes — imagem demonstrativa" loading="lazy">
+              <span class="cartao-produto-completo__categoria">Poda e Corte</span>
+            </div>
+            <div class="cartao-produto-completo__corpo">
+              <h3>Aparadores de Sebes</h3>
+              <p>Equipamentos para corte e manutenção precisa de sebes e arbustos.</p>
+              <ul class="cartao-produto-completo__caracteristicas">
+                <li>Corte preciso e alinhado</li>
+                <li>Ideais para sebes e arbustos</li>
+                <li>Fácil manobrabilidade</li>
+              </ul>
+              <p class="cartao-produto-completo__nota">Modelo e preço sob consulta</p>
+              <a href="../../index.html?servico=Outro#contacto" class="btn btn--primario btn--bloco">Pedir Informações</a>
+            </div>
+          </article>
+
+          <!-- 5. Sopradores -->
+          <article class="cartao cartao-produto-completo reveal" id="sopradores" data-categoria="limpeza">
+            <div class="cartao-produto-completo__imagem">
+              <img src="../../imagens/produtos/sopradores.svg" alt="Soprador de folhas — imagem demonstrativa" loading="lazy">
+              <span class="cartao-produto-completo__categoria">Limpeza</span>
+            </div>
+            <div class="cartao-produto-completo__corpo">
+              <h3>Sopradores</h3>
+              <p>Equipamentos para limpeza rápida de folhas, ervas cortadas e outros resíduos.</p>
+              <ul class="cartao-produto-completo__caracteristicas">
+                <li>Limpeza rápida de folhas e resíduos</li>
+                <li>Ideal para o pós-corte</li>
+                <li>Uso em jardins e terrenos</li>
+              </ul>
+              <p class="cartao-produto-completo__nota">Modelo e preço sob consulta</p>
+              <a href="../../index.html?servico=Outro#contacto" class="btn btn--primario btn--bloco">Pedir Informações</a>
+            </div>
+          </article>
+
+          <!-- 6. Trituradores -->
+          <article class="cartao cartao-produto-completo reveal" id="trituradores" data-categoria="limpeza">
+            <div class="cartao-produto-completo__imagem">
+              <img src="../../imagens/produtos/trituradores.svg" alt="Triturador de resíduos vegetais — imagem demonstrativa" loading="lazy">
+              <span class="cartao-produto-completo__categoria">Limpeza</span>
+            </div>
+            <div class="cartao-produto-completo__corpo">
+              <h3>Trituradores</h3>
+              <p>Equipamentos para tratamento e redução de resíduos vegetais resultantes da manutenção.</p>
+              <ul class="cartao-produto-completo__caracteristicas">
+                <li>Reduz o volume dos resíduos verdes</li>
+                <li>Facilita o transporte e descarte</li>
+                <li>Ideal para grandes limpezas</li>
+              </ul>
+              <p class="cartao-produto-completo__nota">Modelo e preço sob consulta</p>
+              <a href="../../index.html?servico=Outro#contacto" class="btn btn--primario btn--bloco">Pedir Informações</a>
+            </div>
+          </article>
+
+          <!-- 7. Equipamentos de Proteção -->
+          <article class="cartao cartao-produto-completo reveal" id="equipamentos-protecao" data-categoria="protecao">
+            <div class="cartao-produto-completo__imagem">
+              <img src="../../imagens/produtos/equipamentos-protecao.svg" alt="Equipamento de proteção individual — imagem demonstrativa" loading="lazy">
+              <span class="cartao-produto-completo__categoria">Proteção e Ferramentas</span>
+            </div>
+            <div class="cartao-produto-completo__corpo">
+              <h3>Equipamentos de Proteção</h3>
+              <p>Equipamentos destinados à proteção da nossa equipa durante a realização dos trabalhos.</p>
+              <ul class="cartao-produto-completo__caracteristicas">
+                <li>Proteção individual da equipa</li>
+                <li>Cumprimento das normas de segurança</li>
+                <li>Utilizados em todos os trabalhos</li>
+              </ul>
+              <p class="cartao-produto-completo__nota">Informações adicionais sob consulta</p>
+              <a href="../../index.html?servico=Outro#contacto" class="btn btn--primario btn--bloco">Pedir Informações</a>
+            </div>
+          </article>
+
+          <!-- 8. Ferramentas de Jardinagem -->
+          <article class="cartao cartao-produto-completo reveal" id="ferramentas-jardinagem" data-categoria="protecao">
+            <div class="cartao-produto-completo__imagem">
+              <img src="../../imagens/produtos/ferramentas-jardinagem.svg" alt="Ferramentas de jardinagem — imagem demonstrativa" loading="lazy">
+              <span class="cartao-produto-completo__categoria">Proteção e Ferramentas</span>
+            </div>
+            <div class="cartao-produto-completo__corpo">
+              <h3>Ferramentas de Jardinagem</h3>
+              <p>Ferramentas diversas para a manutenção cuidada de jardins, canteiros e plantas.</p>
+              <ul class="cartao-produto-completo__caracteristicas">
+                <li>Ferramentas manuais e elétricas</li>
+                <li>Adequadas a trabalhos de detalhe</li>
+                <li>Manutenção de canteiros e plantas</li>
+              </ul>
+              <p class="cartao-produto-completo__nota">Modelo e preço sob consulta</p>
+              <a href="../../index.html?servico=Outro#contacto" class="btn btn--primario btn--bloco">Pedir Informações</a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="sem-resultados">Não existem produtos nesta categoria de momento.</p>
+      </div>
+    </section>
+
+    <!-- ==================== CTA FINAL ==================== -->
+    <section class="secao secao--claro" aria-labelledby="titulo-cta-produtos">
+      <div class="container texto-centrado reveal">
+        <h2 class="secao-titulo" id="titulo-cta-produtos">Precisa de mais informações sobre um equipamento?</h2>
+        <p class="secao-intro">Contacte-nos: temos todo o gosto em ajudar a escolher a melhor solução para o seu trabalho.</p>
+        <a href="../../index.html?servico=Outro#contacto" class="btn btn--primario">Pedir Informações</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== RODAPÉ ==================== -->
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape__topo">
+
+        <div class="rodape__marca">
+          <img src="../../imagens/logo/logo-corte-certo-branco.svg" alt="Corte Certo" width="200" height="52">
+          <p class="rodape__descricao">
+            Serviços profissionais de limpeza e manutenção de jardins, terrenos e espaços
+            exteriores em Portugal.
+          </p>
+          <div class="rodape__redes">
+            <a href="#" class="rodape__link-social" aria-label="Facebook da Corte Certo" title="[LINK FACEBOOK]">
+              <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><circle cx="12" cy="12" r="9"/><line x1="10" y1="8" x2="10" y2="19"/><line x1="10" y1="8" x2="15" y2="8"/><line x1="10" y1="13" x2="14" y2="13"/></svg>
+            </a>
+            <a href="#" class="rodape__link-social" aria-label="Instagram da Corte Certo" title="[LINK INSTAGRAM]">
+              <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="rodape__link-social" aria-label="WhatsApp da Corte Certo" title="[LINK WHATSAPP]">
+              <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="6.5"/><polygon points="7.5,17 7.5,21 12,17"/><circle cx="9.5" cy="10.5" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="10.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="rodape__link-social" aria-label="TikTok da Corte Certo" title="[LINK TIKTOK]">
+              <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><circle cx="9" cy="17" r="3"/><line x1="12" y1="17" x2="12" y2="5"/><polyline points="12,5 17,6.5 17,10"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="rodape__coluna" aria-label="Links rápidos">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="../../index.html">Início</a></li>
+            <li><a href="../servicos/servicos.html">Serviços</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="../sobre/sobre.html">Sobre Nós</a></li>
+            <li><a href="../../index.html#contacto">Contactos</a></li>
+          </ul>
+        </nav>
+
+        <nav class="rodape__coluna" aria-label="Principais serviços">
+          <h3>Serviços</h3>
+          <ul>
+            <li><a href="../servicos/servicos.html#limpeza-terrenos">Limpeza de Terrenos</a></li>
+            <li><a href="../servicos/servicos.html#limpeza-jardins">Limpeza de Jardins</a></li>
+            <li><a href="../servicos/servicos.html#poda-arvores">Poda de Árvores</a></li>
+            <li><a href="../servicos/servicos.html#desmatacao">Desmatação</a></li>
+          </ul>
+        </nav>
+
+        <div class="rodape__coluna">
+          <h3>Contactos</h3>
+          <ul>
+            <li><a href="tel:+351XXXXXXXXX">[INSERIR TELEFONE]</a></li>
+            <li><a href="mailto:INSERIR_EMAIL@corte-certo.pt">[INSERIR EMAIL]</a></li>
+            <li><address>[INSERIR LOCALIZAÇÃO]</address></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="rodape__base">
+        <p>&copy; <span class="ano-atual">2026</span> Corte Certo. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="botao-topo" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="6,11 12,5 18,11"/></svg>
+  </button>
+
+  <script src="../../js/main.js"></script>
+  <script src="../../js/produtos.js"></script>
+</body>
+</html>

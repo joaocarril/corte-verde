@@ -1,0 +1,838 @@
+/* ==========================================================================
+   CORTE CERTO — style.css
+   Folha de estilos GLOBAL: usada em todas as páginas do site.
+   Contém: reset, variáveis, tipografia base, cabeçalho, rodapé, botões,
+   hero, secções da página inicial (serviços, produtos, quem somos,
+   vantagens, contacto/formulário), animações e responsividade.
+
+   Índice rápido:
+   1. Variáveis e configuração global
+   2. Reset e estilos base
+   3. Utilitários (container, secções, títulos, acessibilidade)
+   4. Botões
+   5. Cabeçalho e navegação
+   6. Menu mobile
+   7. Hero (página inicial e páginas interiores)
+   8. Cartões genéricos
+   9. Secção "Serviços" (destaque, página inicial)
+   10. Secção "Produtos" (destaque, página inicial)
+   11. Secção "Quem Somos"
+   12. Secção "Vantagens"
+   13. Secção "Contacto" + formulário
+   14. Rodapé
+   15. Botão voltar ao topo
+   16. Animações (scroll reveal)
+   17. Responsividade (breakpoints)
+   ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   1. VARIÁVEIS E CONFIGURAÇÃO GLOBAL
+   -------------------------------------------------------------------------- */
+:root {
+  /* Cores principais — paleta inspirada na natureza */
+  --cor-verde-escuro: #1B4332;
+  --cor-verde-medio: #2D6A4F;
+  --cor-verde-medio-claro: #40916C;
+  --cor-verde-claro: #95D5B2;
+  --cor-verde-suave: #EDF7F0;      /* fundo claro para alternar secções */
+  --cor-branco: #FFFFFF;
+  --cor-cinza-texto: #3B4A44;
+  --cor-cinza-medio: #66766F;
+  --cor-cinza-claro: #E3EAE6;
+  --cor-cinza-fundo: #F6FAF7;
+
+  /* Cor de destaque (usar com moderação, conforme pedido) */
+  --cor-destaque: #E9A23B;
+  --cor-destaque-escuro: #C97F1E;
+
+  /* Estados */
+  --cor-erro: #C0392B;
+  --cor-erro-fundo: #FCECEA;
+  --cor-sucesso: #2D6A4F;
+  --cor-sucesso-fundo: #E9F6EE;
+
+  /* Tipografia — preparado para receber Google Fonts (ver README) */
+  --fonte-titulos: 'Poppins', 'Segoe UI', Roboto, Arial, sans-serif;
+  --fonte-corpo: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+
+  /* Espaçamento */
+  --espaco-xs: 0.5rem;
+  --espaco-sm: 1rem;
+  --espaco-md: 1.5rem;
+  --espaco-lg: 2.5rem;
+  --espaco-xl: 4rem;
+  --espaco-xxl: 5.5rem;
+
+  /* Layout */
+  --largura-maxima: 1240px;
+  --raio-borda: 16px;
+  --raio-borda-sm: 10px;
+  --sombra-suave: 0 4px 18px rgba(15, 46, 34, 0.08);
+  --sombra-media: 0 12px 32px rgba(15, 46, 34, 0.14);
+  --sombra-forte: 0 22px 48px rgba(15, 46, 34, 0.22);
+  --transicao: 0.28s ease;
+  --transicao-lenta: 0.5s ease;
+  --altura-cabecalho: 82px;
+}
+
+/* Para ativar uma fonte do Google Fonts no futuro:
+   1) Adicionar no <head> de cada página, por exemplo:
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+   2) As variáveis --fonte-titulos e --fonte-corpo já estão prontas para essas fontes.
+   Enquanto isso não for feito, o site usa fontes seguras do sistema (funciona offline). */
+
+
+/* --------------------------------------------------------------------------
+   2. RESET E ESTILOS BASE
+   -------------------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--altura-cabecalho);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;             /* garante que não existe scroll horizontal */
+  font-family: var(--fonte-corpo);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--cor-cinza-texto);
+  background-color: var(--cor-branco);
+  -webkit-font-smoothing: antialiased;
+}
+
+img, svg, picture, video { max-width: 100%; display: block; }
+ul, ol { list-style: none; }
+a { text-decoration: none; color: inherit; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; background: none; border: none; }
+table { border-collapse: collapse; width: 100%; }
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--fonte-titulos);
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--cor-verde-escuro);
+}
+
+p { max-width: 68ch; }
+strong { color: var(--cor-verde-escuro); }
+
+/* Acessibilidade: foco visível e consistente em todo o site */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--cor-destaque);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Respeitar utilizadores que preferem menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   3. UTILITÁRIOS
+   -------------------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--largura-maxima);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+/* Link "Saltar para o conteúdo principal" — acessibilidade por teclado */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--cor-verde-escuro);
+  color: #fff;
+  padding: 0.9rem 1.4rem;
+  z-index: 3000;
+  border-radius: 0 0 10px 0;
+  font-weight: 600;
+  transition: top var(--transicao);
+}
+.skip-link:focus { top: 0; }
+
+/* Texto visível apenas para leitores de ecrã */
+.visualmente-oculto {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.secao { padding-block: var(--espaco-xxl); }
+.secao--claro { background-color: var(--cor-verde-suave); }
+.secao--escuro { background-color: var(--cor-verde-escuro); color: #EAF2ED; }
+.secao--escuro h2, .secao--escuro h3 { color: #fff; }
+.secao--sem-espaco-topo { padding-top: 0; }
+
+.secao-cabecalho {
+  max-width: 700px;
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: var(--espaco-xl);
+}
+.secao-cabecalho--esquerda { margin-inline: 0; text-align: left; }
+
+.secao-eyebrow {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cor-verde-medio-claro);
+  margin-bottom: 0.7rem;
+}
+
+.secao-titulo {
+  font-size: clamp(1.7rem, 1.35rem + 1.5vw, 2.6rem);
+  margin-bottom: 1rem;
+  text-wrap: balance;
+}
+
+.secao-intro {
+  color: var(--cor-cinza-medio);
+  font-size: 1.08rem;
+  margin-inline: auto;
+}
+.secao-intro--esquerda { margin-inline: 0; }
+.secao--escuro .secao-intro { color: #CFE3D8; }
+
+.texto-centrado { text-align: center; }
+
+
+/* --------------------------------------------------------------------------
+   4. BOTÕES
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.95rem 1.9rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.98rem;
+  font-family: var(--fonte-corpo);
+  line-height: 1;
+  white-space: nowrap;
+  transition: transform var(--transicao), box-shadow var(--transicao),
+              background-color var(--transicao), color var(--transicao),
+              border-color var(--transicao);
+}
+.btn:active { transform: translateY(1px); }
+.btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+.btn--primario {
+  background-color: var(--cor-verde-medio-claro);
+  color: #fff;
+  box-shadow: var(--sombra-suave);
+}
+.btn--primario:hover { background-color: var(--cor-verde-escuro); box-shadow: var(--sombra-media); transform: translateY(-3px); }
+
+.btn--secundario { background-color: #fff; color: var(--cor-verde-escuro); box-shadow: var(--sombra-suave); }
+.btn--secundario:hover { background-color: var(--cor-verde-suave); transform: translateY(-3px); }
+
+.btn--outline { background-color: transparent; border: 2px solid currentColor; }
+.btn--outline:hover { background-color: rgba(255, 255, 255, 0.15); transform: translateY(-3px); }
+
+.btn--outline-escuro { background-color: transparent; border: 2px solid var(--cor-verde-escuro); color: var(--cor-verde-escuro); }
+.btn--outline-escuro:hover { background-color: var(--cor-verde-escuro); color: #fff; transform: translateY(-3px); }
+
+.btn--destaque { background-color: var(--cor-destaque); color: var(--cor-verde-escuro); }
+.btn--destaque:hover { background-color: var(--cor-destaque-escuro); color: #fff; transform: translateY(-3px); }
+
+.btn--bloco { width: 100%; }
+.btn--pequeno { padding: 0.65rem 1.3rem; font-size: 0.88rem; }
+.btn[disabled] { opacity: 0.6; cursor: not-allowed; transform: none !important; }
+
+
+/* --------------------------------------------------------------------------
+   5. CABEÇALHO E NAVEGAÇÃO
+   -------------------------------------------------------------------------- */
+.cabecalho {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 1px 0 rgba(15, 46, 34, 0.08);
+  transition: box-shadow var(--transicao), padding var(--transicao);
+}
+.cabecalho.scrolled { box-shadow: var(--sombra-media); }
+
+.cabecalho__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: var(--largura-maxima);
+  margin-inline: auto;
+  padding: 1rem 1.25rem;
+  transition: padding var(--transicao);
+}
+.cabecalho.scrolled .cabecalho__container { padding-block: 0.6rem; }
+
+.logo { display: flex; align-items: center; flex-shrink: 0; }
+.logo img { height: 48px; width: auto; transition: height var(--transicao); }
+.cabecalho.scrolled .logo img { height: 40px; }
+
+/* --------------------------------------------------------------------------
+   6. NAVEGAÇÃO PRINCIPAL / MENU MOBILE
+   -------------------------------------------------------------------------- */
+.nav-principal__lista {
+  display: flex;
+  align-items: center;
+  gap: 1.9rem;
+}
+
+.nav-principal__link {
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.97rem;
+  color: var(--cor-verde-escuro);
+  padding-block: 0.5rem;
+}
+.nav-principal__link::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -1px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--cor-destaque);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transicao);
+}
+.nav-principal__link:hover::after,
+.nav-principal__link[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+.nav-principal__link[aria-current="page"] { color: var(--cor-verde-medio-claro); }
+
+.nav-principal__item--cta { display: none; }
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.menu-toggle:hover { background-color: var(--cor-verde-suave); }
+.menu-toggle__linha {
+  width: 24px;
+  height: 2.5px;
+  border-radius: 2px;
+  background-color: var(--cor-verde-escuro);
+  transition: transform var(--transicao), opacity var(--transicao);
+}
+.menu-toggle[aria-expanded="true"] .menu-toggle__linha:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+.menu-toggle[aria-expanded="true"] .menu-toggle__linha:nth-child(2) { opacity: 0; }
+.menu-toggle[aria-expanded="true"] .menu-toggle__linha:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
+
+@media (max-width: 1023px) {
+  .menu-toggle { display: inline-flex; }
+
+  .nav-principal {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: var(--sombra-media);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transicao-lenta);
+  }
+  .nav-principal.aberto { max-height: 32em; }
+
+  .nav-principal__lista {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 0.5rem 1.25rem 1.6rem;
+  }
+  .nav-principal__item { border-bottom: 1px solid var(--cor-cinza-claro); }
+  .nav-principal__link { display: block; padding: 1rem 0.2rem; }
+  .nav-principal__link::after { display: none; }
+
+  .nav-principal__item--cta { display: block; border-bottom: none; padding-top: 1.1rem; }
+  .nav-principal__item--cta .btn { width: 100%; }
+}
+
+@media (min-width: 1024px) {
+  .nav-principal__item--cta { display: block; }
+}
+
+
+/* --------------------------------------------------------------------------
+   7. HERO
+   -------------------------------------------------------------------------- */
+.hero {
+  position: relative;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+}
+.hero__fundo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.hero__camada {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(11, 31, 23, 0.5) 0%, rgba(11, 31, 23, 0.72) 60%, rgba(11, 31, 23, 0.88) 100%);
+}
+.hero__conteudo {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding-block: var(--espaco-xxl);
+}
+.hero__titulo {
+  font-size: clamp(2.3rem, 1.7rem + 3vw, 4.4rem);
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+.hero__subtitulo {
+  font-family: var(--fonte-titulos);
+  font-size: clamp(1.1rem, 1rem + 0.6vw, 1.5rem);
+  font-weight: 600;
+  color: var(--cor-verde-claro);
+  margin-bottom: 1.3rem;
+}
+.hero__texto {
+  font-size: 1.08rem;
+  opacity: 0.94;
+  margin-bottom: 2.3rem;
+  max-width: 56ch;
+}
+.hero__botoes { display: flex; flex-wrap: wrap; gap: 1rem; }
+
+/* Variante usada nas páginas interiores (Serviços, Produtos, Sobre) */
+.hero--pagina { min-height: auto; }
+.hero--pagina .hero__conteudo {
+  max-width: 800px;
+  padding-block: 4.5rem;
+  margin-inline: auto;
+  text-align: center;
+}
+.trilha {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.92rem;
+  opacity: 0.88;
+  margin-bottom: 1.1rem;
+}
+.trilha a { text-underline-offset: 3px; text-decoration: underline; }
+.trilha a:hover { color: var(--cor-verde-claro); }
+.hero--pagina .hero__texto { margin-inline: auto; }
+.hero--pagina .hero__botoes { justify-content: center; }
+
+
+/* --------------------------------------------------------------------------
+   8. CARTÕES GENÉRICOS
+   -------------------------------------------------------------------------- */
+.cartao {
+  background-color: #fff;
+  border-radius: var(--raio-borda);
+  box-shadow: var(--sombra-suave);
+  transition: transform var(--transicao), box-shadow var(--transicao);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cartao:hover { transform: translateY(-7px); box-shadow: var(--sombra-forte); }
+
+/* Destaque temporário aplicado via JS quando se chega a um cartão (serviço
+   ou produto) através de uma hiperligação direta com âncora (#id) */
+.destaque-temporario {
+  box-shadow: 0 0 0 3px var(--cor-destaque), var(--sombra-forte);
+  animation: pulso-destaque 1.4s ease 2;
+}
+@keyframes pulso-destaque {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.icone-caixa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background-color: var(--cor-verde-suave);
+  color: var(--cor-verde-medio-claro);
+  flex-shrink: 0;
+  transition: background-color var(--transicao), color var(--transicao), transform var(--transicao);
+}
+
+/* Estilo consistente para todos os ícones SVG desenhados à mão (sem
+   bibliotecas externas de ícones) usados em cartões, botões, contactos,
+   rodapé e mensagens do formulário. */
+.icone-caixa svg,
+.cartao-vantagem__icone svg,
+.contacto__item-icone svg,
+.rodape__link-social svg,
+.link-saber-mais svg,
+.botao-topo svg,
+.formulario__sucesso svg,
+.menu-toggle svg,
+.btn svg,
+.trilha svg,
+.quem-somos__lista-check svg,
+.grelha-diferenciais svg,
+.icone-svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* --------------------------------------------------------------------------
+   9. SECÇÃO "SERVIÇOS" — destaque na página inicial
+   -------------------------------------------------------------------------- */
+.grelha-servicos-destaque {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+.cartao-servico-destaque { padding: 2.3rem 1.9rem; text-align: left; }
+.cartao-servico-destaque__icone {
+  width: 62px; height: 62px;
+  margin-bottom: 1.4rem;
+}
+.cartao-servico-destaque__icone svg { width: 30px; height: 30px; }
+.cartao:hover .cartao-servico-destaque__icone {
+  background-color: var(--cor-verde-medio-claro);
+  color: #fff;
+  transform: rotate(-6deg) scale(1.06);
+}
+.cartao-servico-destaque h3 { font-size: 1.24rem; margin-bottom: 0.65rem; }
+.cartao-servico-destaque p { color: var(--cor-cinza-medio); font-size: 0.97rem; margin-bottom: 1.5rem; flex-grow: 1; }
+
+.link-saber-mais {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  font-size: 0.94rem;
+  color: var(--cor-verde-medio-claro);
+}
+.link-saber-mais svg { width: 16px; height: 16px; transition: transform var(--transicao); }
+.link-saber-mais:hover svg { transform: translateX(5px); }
+
+.bloco-cta-central { text-align: center; margin-top: var(--espaco-xl); }
+
+
+/* --------------------------------------------------------------------------
+   10. SECÇÃO "PRODUTOS" — destaque na página inicial
+   -------------------------------------------------------------------------- */
+.grelha-produtos-destaque {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+.cartao-produto-destaque__imagem { aspect-ratio: 4 / 3; overflow: hidden; }
+.cartao-produto-destaque__imagem img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.55s ease; }
+.cartao:hover .cartao-produto-destaque__imagem img { transform: scale(1.08); }
+
+.cartao-produto-destaque__corpo { padding: 1.5rem 1.6rem 1.8rem; display: flex; flex-direction: column; flex-grow: 1; }
+.cartao-produto-destaque__corpo h3 { font-size: 1.12rem; margin-bottom: 0.5rem; }
+.cartao-produto-destaque__corpo p { color: var(--cor-cinza-medio); font-size: 0.94rem; margin-bottom: 1.3rem; flex-grow: 1; }
+
+
+/* --------------------------------------------------------------------------
+   11. SECÇÃO "QUEM SOMOS"
+   -------------------------------------------------------------------------- */
+.quem-somos__grelha {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+.quem-somos__imagem { border-radius: var(--raio-borda); overflow: hidden; box-shadow: var(--sombra-media); }
+.quem-somos__imagem img { aspect-ratio: 4/3; object-fit: cover; width: 100%; }
+
+.quem-somos__texto p + p { margin-top: 1rem; }
+.quem-somos__lista-check { display: flex; flex-direction: column; gap: 0.8rem; margin-block: 1.6rem; }
+.quem-somos__lista-check li { display: flex; gap: 0.7rem; align-items: flex-start; font-size: 0.98rem; }
+.quem-somos__lista-check svg { width: 21px; height: 21px; color: var(--cor-verde-medio-claro); flex-shrink: 0; margin-top: 3px; }
+
+
+/* --------------------------------------------------------------------------
+   12. SECÇÃO "VANTAGENS"
+   -------------------------------------------------------------------------- */
+.grelha-vantagens {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+.cartao-vantagem { text-align: center; padding: 2.2rem 1.5rem; }
+.cartao-vantagem__icone {
+  width: 60px; height: 60px;
+  margin-inline: auto;
+  border-radius: 50%;
+  background-color: var(--cor-verde-escuro);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 1.2rem;
+  transition: transform var(--transicao), background-color var(--transicao);
+}
+.cartao-vantagem__icone svg { width: 27px; height: 27px; }
+.cartao-vantagem:hover .cartao-vantagem__icone { background-color: var(--cor-destaque); color: var(--cor-verde-escuro); transform: scale(1.08); }
+.cartao-vantagem h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+.cartao-vantagem p { font-size: 0.9rem; color: var(--cor-cinza-medio); }
+
+
+/* --------------------------------------------------------------------------
+   13. SECÇÃO "CONTACTO" + FORMULÁRIO
+   -------------------------------------------------------------------------- */
+.contacto__grelha {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.contacto__lista { display: flex; flex-direction: column; gap: 1.5rem; margin-block: 1.8rem; }
+.contacto__item { display: flex; gap: 1rem; align-items: flex-start; }
+.contacto__item-icone { width: 48px; height: 48px; flex-shrink: 0; }
+.contacto__item-icone svg { width: 22px; height: 22px; }
+.contacto__item h3 { font-size: 0.98rem; margin-bottom: 0.25rem; }
+.contacto__item p, .contacto__item a { color: var(--cor-cinza-medio); font-size: 0.96rem; }
+.contacto__item a:hover { color: var(--cor-verde-medio-claro); }
+
+.contacto__botoes { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 0.6rem; }
+
+.formulario { background-color: #fff; border-radius: var(--raio-borda); box-shadow: var(--sombra-media); padding: 2.3rem; }
+.formulario h3 { font-size: 1.3rem; margin-bottom: 0.4rem; }
+.formulario > p { color: var(--cor-cinza-medio); font-size: 0.95rem; margin-bottom: 1.8rem; }
+
+.formulario__linha { display: grid; grid-template-columns: 1fr; gap: 1.3rem; }
+
+.campo { margin-bottom: 1.3rem; display: flex; flex-direction: column; gap: 0.45rem; }
+.campo label { font-weight: 600; font-size: 0.92rem; color: var(--cor-verde-escuro); }
+.campo .obrigatorio { color: var(--cor-erro); }
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 0.85rem 1rem;
+  border: 1.5px solid var(--cor-cinza-claro);
+  border-radius: var(--raio-borda-sm);
+  font-size: 0.96rem;
+  background-color: var(--cor-cinza-fundo);
+  transition: border-color var(--transicao), background-color var(--transicao);
+  width: 100%;
+}
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+  outline: none;
+  border-color: var(--cor-verde-medio-claro);
+  background-color: #fff;
+}
+.campo textarea { resize: vertical; min-height: 130px; }
+.campo select { cursor: pointer; }
+
+.campo--invalido input, .campo--invalido select, .campo--invalido textarea {
+  border-color: var(--cor-erro);
+  background-color: var(--cor-erro-fundo);
+}
+.campo__erro { display: none; font-size: 0.83rem; color: var(--cor-erro); align-items: center; gap: 0.35rem; }
+.campo--invalido .campo__erro { display: flex; }
+
+.formulario__nota { font-size: 0.82rem; color: var(--cor-cinza-medio); margin-top: -0.4rem; margin-bottom: 1.4rem; }
+
+.formulario__sucesso {
+  display: none;
+  background-color: var(--cor-sucesso-fundo);
+  border: 1.5px solid var(--cor-verde-medio-claro);
+  color: var(--cor-verde-escuro);
+  padding: 1.5rem;
+  border-radius: var(--raio-borda-sm);
+  gap: 0.9rem;
+  align-items: flex-start;
+}
+.formulario__sucesso svg { width: 26px; height: 26px; flex-shrink: 0; color: var(--cor-verde-medio-claro); }
+.formulario__sucesso h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }
+.formulario__sucesso p { font-size: 0.92rem; }
+.formulario.enviado form { display: none; }
+.formulario.enviado .formulario__sucesso { display: flex; }
+
+
+/* --------------------------------------------------------------------------
+   14. RODAPÉ
+   -------------------------------------------------------------------------- */
+.rodape { background-color: var(--cor-verde-escuro); color: #DCEAE1; }
+
+.rodape__topo {
+  padding-block: var(--espaco-xl) var(--espaco-lg);
+  display: grid;
+  gap: var(--espaco-lg);
+  grid-template-columns: 1fr;
+}
+
+.rodape__marca img { height: 42px; margin-bottom: 1.1rem; }
+.rodape__descricao { opacity: 0.82; font-size: 0.94rem; max-width: 34ch; margin-bottom: 1.3rem; }
+
+.rodape__coluna h3 {
+  color: #fff;
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+.rodape__coluna ul { display: flex; flex-direction: column; gap: 0.7rem; }
+.rodape__coluna a { opacity: 0.82; font-size: 0.94rem; transition: opacity var(--transicao), padding-left var(--transicao); }
+.rodape__coluna a:hover { opacity: 1; padding-left: 4px; color: var(--cor-verde-claro); }
+.rodape__coluna p, .rodape__coluna address { opacity: 0.82; font-size: 0.94rem; font-style: normal; }
+
+.rodape__redes { display: flex; gap: 0.7rem; margin-top: 1.3rem; flex-wrap: wrap; }
+.rodape__link-social {
+  width: 42px; height: 42px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex; align-items: center; justify-content: center;
+  transition: background-color var(--transicao), transform var(--transicao);
+}
+.rodape__link-social:hover { background-color: var(--cor-verde-medio-claro); transform: translateY(-4px); }
+.rodape__link-social svg { width: 19px; height: 19px; }
+
+.rodape__base {
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  padding-block: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.78;
+}
+.rodape__base a:hover { opacity: 0.8; text-decoration: underline; }
+
+
+/* --------------------------------------------------------------------------
+   15. BOTÃO VOLTAR AO TOPO
+   -------------------------------------------------------------------------- */
+.botao-topo {
+  position: fixed;
+  right: 1.35rem;
+  bottom: 1.35rem;
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  background-color: var(--cor-verde-escuro);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--sombra-media);
+  opacity: 0; visibility: hidden;
+  transform: translateY(15px);
+  transition: opacity var(--transicao), transform var(--transicao), visibility var(--transicao), background-color var(--transicao);
+  z-index: 900;
+}
+.botao-topo.visivel { opacity: 1; visibility: visible; transform: none; }
+.botao-topo:hover { background-color: var(--cor-verde-medio-claro); transform: translateY(-4px); }
+.botao-topo svg { width: 22px; height: 22px; }
+
+
+/* --------------------------------------------------------------------------
+   16. ANIMAÇÕES — revelar elementos ao aparecerem no ecrã
+   -------------------------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visivel { opacity: 1; transform: none; }
+
+@keyframes flutuar-entrada {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero__conteudo > * { animation: flutuar-entrada 0.8s ease both; }
+.hero__conteudo > *:nth-child(1) { animation-delay: 0.05s; }
+.hero__conteudo > *:nth-child(2) { animation-delay: 0.15s; }
+.hero__conteudo > *:nth-child(3) { animation-delay: 0.25s; }
+.hero__conteudo > *:nth-child(4) { animation-delay: 0.35s; }
+
+
+/* --------------------------------------------------------------------------
+   17. RESPONSIVIDADE
+   Breakpoints: até 599px = telemóvel · 600–1023px = tablet · ≥1024px = desktop
+   -------------------------------------------------------------------------- */
+
+/* Tablet (≥600px) */
+@media (min-width: 600px) {
+  .container { padding-inline: 2rem; }
+
+  .grelha-servicos-destaque,
+  .grelha-produtos-destaque,
+  .grelha-vantagens { grid-template-columns: repeat(2, 1fr); }
+
+  .formulario__linha { grid-template-columns: 1fr 1fr; }
+  .rodape__topo { grid-template-columns: 1fr 1fr; }
+}
+
+/* Tablets maiores / pequenos desktops (≥900px) */
+@media (min-width: 900px) {
+  .quem-somos__grelha { grid-template-columns: 1fr 1fr; }
+  .contacto__grelha { grid-template-columns: 0.85fr 1.15fr; }
+}
+
+/* Desktop (≥1024px) */
+@media (min-width: 1024px) {
+  .container { padding-inline: 2.5rem; }
+
+  .grelha-servicos-destaque,
+  .grelha-produtos-destaque { grid-template-columns: repeat(3, 1fr); }
+
+  .grelha-vantagens { grid-template-columns: repeat(4, 1fr); }
+
+  .rodape__topo { grid-template-columns: 1.4fr 1fr 1fr 1fr; }
+}
+
+/* Ecrãs grandes (≥1400px) */
+@media (min-width: 1400px) {
+  :root { --largura-maxima: 1320px; }
+}

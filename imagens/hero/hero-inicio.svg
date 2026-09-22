@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img">
+<defs>
+<linearGradient id="gheroiniciosvg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#0F2E22"/>
+<stop offset="100%" stop-color="#1B4332"/>
+</linearGradient>
+<linearGradient id="gheroiniciosvg-fundo" x1="0%" y1="100%" x2="0%" y2="0%">
+<stop offset="0%" stop-color="#0B1F17" stop-opacity="0.85"/>
+<stop offset="45%" stop-color="#0B1F17" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<rect width="1600" height="900" fill="url(#gheroiniciosvg)"/>
+
+<g opacity="0.10" fill="#FFFFFF">
+<circle cx="1165" cy="867" r="88"/>
+<circle cx="522" cy="120" r="70"/>
+<circle cx="1558" cy="460" r="180"/>
+<circle cx="1334" cy="388" r="174"/>
+<circle cx="192" cy="499" r="107"/>
+<circle cx="798" cy="443" r="61"/>
+</g>
+<g opacity="0.07" fill="#000000">
+<circle cx="941" cy="465" r="109"/>
+<circle cx="1444" cy="402" r="116"/>
+<circle cx="887" cy="519" r="161"/>
+<circle cx="1091" cy="124" r="100"/>
+</g>
+<g transform="translate(84.50725692141214,-358.49274307858786) scale(5.304927430785878)" opacity="0.08"><path d="M100,28 C152,50 164,112 100,182 C36,112 48,50 100,28 Z" fill="#FFFFFF"/>
+<path d="M100,44 L100,168 M100,88 L74,73 M100,120 L126,104 M100,150 L76,137" stroke="#0F2E22" stroke-width="3" opacity="0.30" fill="none" stroke-linecap="round"/></g>
+<g transform="translate(875.4272898143737,210.4272898143737) scale(4.055727101856263)" opacity="0.08"><path d="M100,28 C152,50 164,112 100,182 C36,112 48,50 100,28 Z" fill="#FFFFFF"/>
+<path d="M100,44 L100,168 M100,88 L74,73 M100,120 L126,104 M100,150 L76,137" stroke="#0F2E22" stroke-width="3" opacity="0.30" fill="none" stroke-linecap="round"/></g>
+<g transform="translate(-345.5339259759445,-55.5339259759445) scale(4.695339259759445)" opacity="0.08"><path d="M35,180 Q45,110 40,94" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M60,180 Q46,85 53,69" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M85,180 Q93,100 89,84" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M110,180 Q104,80 107,64" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M135,180 Q151,102 143,86" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M160,180 Q150,88 155,72" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M180,180 Q186,112 183,96" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/></g>
+<g transform="translate(279.89510219616193,38.89510219616193) scale(6.471048978038381)" opacity="0.08"><path d="M15,155 L58,88 L92,132 L128,55 L185,155 Z" fill="#FFFFFF"/></g>
+<g transform="translate(789.9815657188158,-17.01843428118417) scale(4.2301843428118415)" opacity="0.08"><path d="M100,28 C152,50 164,112 100,182 C36,112 48,50 100,28 Z" fill="#FFFFFF"/>
+<path d="M100,44 L100,168 M100,88 L74,73 M100,120 L126,104 M100,150 L76,137" stroke="#0F2E22" stroke-width="3" opacity="0.30" fill="none" stroke-linecap="round"/></g>
+<rect x="0" y="342" width="1600" height="558" fill="url(#gheroiniciosvg-fundo)"/>
+<g>
+<rect x="1422" y="16" width="160" height="26" rx="13" fill="#0B1F17" opacity="0.55"/>
+<text x="1502" y="33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#FFFFFF">IMAGEM DEMONSTRATIVA</text>
+</g>
+<g transform="translate(-48.72727272727266,177.2727272727273) scale(2.727272727272727)" opacity="0.14"><rect x="90" y="118" width="20" height="58" rx="5" fill="#FFFFFF"/>
+<circle cx="100" cy="92" r="54" fill="#FFFFFF"/>
+<circle cx="62" cy="113" r="34" fill="#FFFFFF" opacity="0.88"/>
+<circle cx="138" cy="113" r="34" fill="#FFFFFF" opacity="0.88"/></g>
+<text x="96" y="648" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="99" font-weight="800" fill="#FFFFFF">Limpeza e Manutenção de Jardins e Terrenos</text>
+<text x="96" y="707" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="37" fill="#E7F3EC" opacity="0.88">Imagem de destaque a substituir — sugestão: fotografia de equipa a trabalhar num terreno/jardim</text>
+</svg>

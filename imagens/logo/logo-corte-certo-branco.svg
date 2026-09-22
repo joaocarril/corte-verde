@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 84" width="320" height="84" role="img" aria-label="Corte Certo">
+<circle cx="42" cy="42" r="38" fill="#40916C"/>
+<g transform="translate(20,20) scale(0.22)"><path d="M100,28 C152,50 164,112 100,182 C36,112 48,50 100,28 Z" fill="#FFFFFF"/>
+<path d="M100,44 L100,168 M100,88 L74,73 M100,120 L126,104 M100,150 L76,137" stroke="#0F2E22" stroke-width="3" opacity="0.30" fill="none" stroke-linecap="round"/></g>
+<path d="M27 50 L37 60 L58 32" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.001"/>
+<text x="96" y="48" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#FFFFFF">Corte Certo</text>
+<text x="96" y="68" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="500" letter-spacing="0.5" fill="#FFFFFF" opacity="0.72">Jardins &amp; Espaços Exteriores</text>
+</svg>

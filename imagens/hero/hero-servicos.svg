@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 500" width="1600" height="500" role="img">
+<defs>
+<linearGradient id="gheroservicossvg" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#1B4332"/>
+<stop offset="100%" stop-color="#2D6A4F"/>
+</linearGradient>
+<linearGradient id="gheroservicossvg-fundo" x1="0%" y1="100%" x2="0%" y2="0%">
+<stop offset="0%" stop-color="#0B1F17" stop-opacity="0.85"/>
+<stop offset="45%" stop-color="#0B1F17" stop-opacity="0"/>
+</linearGradient>
+</defs>
+<rect width="1600" height="500" fill="url(#gheroservicossvg)"/>
+
+<g opacity="0.10" fill="#FFFFFF">
+<circle cx="187" cy="43" r="37"/>
+<circle cx="346" cy="376" r="76"/>
+<circle cx="515" cy="310" r="69"/>
+<circle cx="1242" cy="18" r="57"/>
+<circle cx="1395" cy="81" r="104"/>
+<circle cx="1307" cy="201" r="85"/>
+</g>
+<g opacity="0.07" fill="#000000">
+<circle cx="398" cy="465" r="114"/>
+<circle cx="734" cy="239" r="109"/>
+<circle cx="1358" cy="257" r="46"/>
+<circle cx="1232" cy="113" r="67"/>
+</g>
+<g transform="translate(187.1855472958648,-292.8144527041352) scale(7.0081445270413525)" opacity="0.08"><path d="M35,180 Q45,110 40,94" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M60,180 Q46,85 53,69" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M85,180 Q93,100 89,84" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M110,180 Q104,80 107,64" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M135,180 Q151,102 143,86" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M160,180 Q150,88 155,72" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M180,180 Q186,112 183,96" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/></g>
+<g transform="translate(798.3434465063442,-255.65655349365574) scale(3.7865655349365572)" opacity="0.08"><path d="M100,28 C152,50 164,112 100,182 C36,112 48,50 100,28 Z" fill="#FFFFFF"/>
+<path d="M100,44 L100,168 M100,88 L74,73 M100,120 L126,104 M100,150 L76,137" stroke="#0F2E22" stroke-width="3" opacity="0.30" fill="none" stroke-linecap="round"/></g>
+<g transform="translate(552.5340138275653,-382.46598617243467) scale(5.664659861724346)" opacity="0.08"><path d="M35,180 Q45,110 40,94" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M60,180 Q46,85 53,69" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M85,180 Q93,100 89,84" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M110,180 Q104,80 107,64" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M135,180 Q151,102 143,86" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M160,180 Q150,88 155,72" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M180,180 Q186,112 183,96" stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round"/></g>
+<g transform="translate(552.3714180023849,-273.6285819976152) scale(3.8362858199761516)" opacity="0.08"><path d="M100,28 C152,50 164,112 100,182 C36,112 48,50 100,28 Z" fill="#FFFFFF"/>
+<path d="M100,44 L100,168 M100,88 L74,73 M100,120 L126,104 M100,150 L76,137" stroke="#0F2E22" stroke-width="3" opacity="0.30" fill="none" stroke-linecap="round"/></g>
+<g transform="translate(563.6176110894577,-280.3823889105423) scale(3.8538238891054233)" opacity="0.08"><rect x="90" y="118" width="20" height="58" rx="5" fill="#FFFFFF"/>
+<circle cx="100" cy="92" r="54" fill="#FFFFFF"/>
+<circle cx="62" cy="113" r="34" fill="#FFFFFF" opacity="0.88"/>
+<circle cx="138" cy="113" r="34" fill="#FFFFFF" opacity="0.88"/></g>
+<rect x="0" y="190" width="1600" height="310" fill="url(#gheroservicossvg-fundo)"/>
+<g>
+<rect x="1422" y="16" width="160" height="26" rx="13" fill="#0B1F17" opacity="0.55"/>
+<text x="1502" y="33" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1" fill="#FFFFFF">IMAGEM DEMONSTRATIVA</text>
+</g>
+<g transform="translate(72.48484848484853,98.4848484848485) scale(1.5151515151515151)" opacity="0.14"><g stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round">
+<line x1="58" y1="152" x2="148" y2="58"/>
+<line x1="142" y1="152" x2="52" y2="58"/>
+<circle cx="60" cy="152" r="17"/>
+<circle cx="140" cy="152" r="17"/>
+</g>
+<circle cx="100" cy="105" r="7" fill="#FFFFFF"/></g>
+<text x="96" y="360" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="55" font-weight="800" fill="#FFFFFF">Os Nossos Serviços</text>
+<text x="96" y="394" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#E7F3EC" opacity="0.88">Imagem de cabeçalho a substituir</text>
+</svg>
